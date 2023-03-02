@@ -20,13 +20,25 @@ function numeroRandom (min, max){
 let somma = numeroRandom (1,5) + numeroUtente;
 console.log ('questa è la somma:' , somma );
 
-if (somma % 2 == 0){
-     console.log(somma , 'il numero è pari') ;
-   
-}else{
-    console.log(somma , 'il numero è dispari') ;
 
+let esitoPariDispari = calcoloPariDispari(somma);
+console.log (esitoPariDispari);
+
+function calcoloPariDispari(verifica){
+    risultato = '';
+
+    if (verifica % 2 == 0){
+        risultato = 'il numero è pari';
+      
+   }else{
+     risultato = 'il numero è dispari';
+   
+   }
+   return risultato;
+   
 }
+
+
 
 
 
