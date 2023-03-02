@@ -20,6 +20,14 @@ function numeroRandom (min, max){
 let somma = numeroRandom (1,5) + numeroUtente;
 console.log ('questa è la somma:' , somma );
 
+if (somma % 2 == 0){
+     console.log(somma , 'il numero è pari') ;
+   
+}else{
+    console.log(somma , 'il numero è dispari') ;
+
+}
+
 
 
 
